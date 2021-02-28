@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+    <title>young.</title>
+    <link rel="icon" href="./img/younglogo2.png">
+    <link rel="stylesheet" href="style.css?v=6.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="first-section">
+        <div class="nav-part">
+            <img id="smilelogo" src="img/heart2.png">
+            <div id="know" class="know">
+                <div id="wrapper">Do you want to know me more?</div>
+                <div id="tellyou">
+                    <p><span>Nice to meet you:)</span><br>
+                        Currently, I'm finishing up my last semester of studies at NSCC. I'm familiar with <span>JavaScript</span>, <span>HTML CSS</span>, and have experience with <br><span>React</span> and <span>Laravel</span>.<br>
+                        I'm always exploring the latest features and web design trends. That's great fun for me!</p>
+                </div>
+            </div>
+            <button id="remove-tellyou">x</button>
+        </div>
+        <div class="main-part">
+            <div class="cursor"></div>
+            <h1>
+                Hello there,<br>
+                This is<br> <span id="youngspan">YOUNG's<br></span> portfolio site
+            </h1>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="inside-triangle-text-1">
+            <p>I'm a Creative Front-end developer. I'm a Creative Front-end developer. </p>
+        </div>
+        <div class="inside-triangle-text-2">
+            <p>Designing and developing user friendly interface. Designing and developing user friendly interface. </p>
+        </div>
+    </section>
+
+    <section class="third-section">
+
+        <h1 class="third-header" id="animate-box">
+            These are my projects
+        </h1>
+
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <img class="smile" src="img/smile_1.png" onmouseover="this.src='./img/smile_2.png';"
+            onmouseout="this.src='./img/smile_1.png';" style="width: 250px;">
+        <div class="container">
+            <div class="card">
+                <h1 id="hidden-title">Weather app<br></h1>
+                <div class="content">
+                    <img src="img/weather.png">
+                    <h3>Weather app</h3>
+                    <p>This project receives weather information of cities around
+                        the world through search.</p>
+                    <a target="_blank" rel="noopener noreferrer" href="http://youngyuneom.net/weatherapp">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <h1 id="hidden-title">Tetris Game<br>(for web)<br></h1>
+                <div class="content">
+
+                    <img src="img/tetris1.png">
+                    <h3>Tetris Game</h3>
+                    <p>This is a Tetris game for the web. Use the Keyboard arrow keys. Have fun!</p>
+                    <a target="_blank" rel="noopener noreferrer" href="http://youngyuneom.net/tetris">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <h1 id="hidden-title">The plant shop<br>Website<br></h1>
+                <div class="content">
+                    <img src="img/theplantshoplogo.png">
+                    <h3>The plant shop</h3>
+                    <p>The Plant shop website. This is a Web design project that display responsive layout.</p>
+                    <a target="_blank" rel="noopener noreferrer" href="http://youngyuneom.net/theplantshop">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <h1 id="hidden-title">Previous<br>Portfolio site<br></h1>
+                <div class="content">
+                    <img src="img/portfolio1.png">
+                    <h3>2020 Portfolio</h3>
+                    <p>This is my portfolio site for 2020. </p>
+                    <a target="_blank" rel="noopener noreferrer" href="http://youngyuneom.net/2020">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <h1 id="hidden-title">Halifax <br>Transit<br></h1>
+                <div class="content">
+                    <img src="img/map.png">
+                    <h3>Halifax transit</h3>
+                    <p>This app is a "Halifax real-time bus map".</p>
+                    <a target="_blank" rel="noopener noreferrer" href="http://youngyuneom.net/halifaxtransit">View</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <h1>if you like my works?
+            <br>please reach out to me!<br>
+            <img id="arrow" src="./img//white_arrow2.png">
+        </h1>
+        <div class="links">
+
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/youngyuneom">LinkdIn</a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:youngyuneom@gmail.com">E-mail</a>
+        </div>
+        <p>&copy; 2021 young.</p>
+    </section>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+    //These are lines of text that move when scrolling
+        $(document).on('scroll', function () {
+            //this is moving smile
+            $('.smile').css("right", Math.max(2700 - 0.85 * window.scrollY, -2000) + 'px')
+            //this is first text 
+            $('.inside-triangle-text-1 p').css("left", Math.max(400 - 0.85 * window.scrollY, -1000) + 'px')
+            //this is second text 
+            $('.inside-triangle-text-2 p').css("right", Math.max(100 - 0.95 * window.scrollY, -2000) + 'px')
+        })
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        //this is main card moving
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 900,
+        });
+    </script>
+
+    <script>
+        var box = document.getElementById('animate-box');
+
+        var initialPosition = 0;
+        var scrollPosition = window.innerHeight;
+        initialPosition = scrollPosition;
+
+        window.addEventListener('scroll', function () {
+            scrollPosition = window.pageYOffset;
+            if (scrollPosition > initialPosition * 0.1) {
+                box.classList.add('box-animate')
+            }
+        })
+    </script>
+
+    <script>
+        let know = document.querySelector('#know');
+        let wrapper = document.querySelector('#wrapper');
+        let remove = document.querySelector('#remove-tellyou');
+        let tellyou = document.querySelector('#tellyou');
+        var mql = window.matchMedia('(max-width: 700px)');
+
+        //if the click circle, the circle will be bigger 
+        //this is big circle property 
+        know.addEventListener('click', (event) => {
+            know.style.width = '650px';
+            know.style.height = '650px';
+            know.style.animation = 'none';
+            know.style.background = '#c3aad4';
+            wrapper.style.display = 'none';
+            tellyou.style.display = 'inherit';
+            remove.style.display = 'inherit';
+            know.style.boxShadow = '20px 20px 0 0 rgba(143, 148, 160, 0.125)';
+
+            if (mql.matches) {
+                know.style.width = '300px';
+                know.style.height = '300px';
+                tellyou.style.fontSize = '13px';
+                tellyou.style.letterSpacing = '1px';
+                tellyou.style.lineHeight = '21px';
+                tellyou.style.padding = '14%';
+            }
+        })
+        //if the click x button, the circle will be smaller
+        //this is small circle property 
+        remove.addEventListener('click', (event) => {
+            know.style.width = '100px';
+            know.style.height = '100px';
+            know.style.background = '#f7e3a5';
+            know.style.animation = 'rotation 8s infinite linear';
+            tellyou.style.display = 'none';
+            wrapper.style.display = 'inherit';
+            remove.style.display = 'none';
+            know.style.boxShadow = '5px 5px 0 0 rgba(143, 148, 160, 0.125)';
+      
+        })
+    </script>
+    <script src="circletype.min.js"></script>
+    <script>
+        new CircleType(document.getElementById('wrapper'))
+            .radius(48);
+
+    </script>
+</body>
+
+</html>
